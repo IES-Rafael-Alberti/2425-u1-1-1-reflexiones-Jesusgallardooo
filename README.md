@@ -9,7 +9,7 @@ Apoyate en los siguientes recursos para realizar la práctica:
 
 ---
 
-# P 1.10: Reflexión y discusión sobre los resultados¶
+# P 1.10: Reflexión y discusión sobre los resultados
 
 ## Identificación de la Actividad
 - **ID de la Actividad:** 1.10
@@ -35,54 +35,62 @@ Respuesta a una serie de preguntas, concretamente 40 preguntas, las cuales busca
 
 #### 1.1.1. ¿Cómo se ejecuta el código en el procesador? 
 
-Respuesta
+Primero, el procesador, en función del lenguaje en el que esté programado el código,  compilará o interpretará dicho código, para así convertirlo a 
+lenguaje máquina. Tras traducirlo a lenguaje máquina, esta información se carga en la memoria RAM, desde la cual el procesador irá recibiendo instrucciones 
+y ejecutándolas. Una vez estas instrucciones son ejecutadas, los resultados en caso de que los hubiese, los guardaríamos o veríamos en la salida.
 
 #### 1.1.2. ¿Qué hace la memoria RAM con la información del botón o el LED? 
 
-Respuesta
+La RAM comprueba el estado tanto del botón como del LED, para saber si el botón se encuentra activo y si, por ende, el LED está encendido. almacena dicha información,y en caso de que dicha información cambiase, ordenará la instrucción de cambiar el estado del botón y del LED al procesador para así obtener el resultado que nos pedía nuestro programa. 
 
 #### 1.1.3. ¿Cómo se comunican los periféricos (botón y LED) con el procesador? 
 
-Respuesta
+En nuestro caso, era una simulación con una placa arduino, por lo que existía una conexión física asignada a los pines correspondientes. Para comunicarse con el procesador, el cual comprueba el estado del botón y controla el estado del LED encendiéndolo o apagándolo según indique el botón.
 
 ### 1.2 Segunda parte
 
-Respuesta
+
 
 #### 1.2.1. ¿Cómo interactúan el procesador, la memoria y los periféricos en la ejecución del programa? 
 
-Respuesta
+La interacción consiste en la carga del programa/información en la memoria RAM, el procesador lee las instrucciones  que han sido recibidas de la RAM y las ejecuta realizando las funciones que estas indiquen, y cuando dicho programa ordene comunicarse con cualquier periférico, el procesador se encargará de comunicarse con él por los puertos de E/S, enviando o recibiendo datos según se necesite.
 
 ####  1.2.2. ¿Qué pasa con los datos en la memoria cuando el programa se ejecuta? 
 
-Respuesta
+Cuando ejecutamos un programa, primeramente se carga en la RAM, donde además se almacenarán los datos necesarios para ejecutarse. Una vez se cierra el programa, la memoria se vacía ya que así funciona la memoria RAM. 
 
 ####  1.2.3. ¿Qué roles juegan las instrucciones del software en esta interacción? 
 
-Respuesta
+Las instrucciones se encargan de que todo se ejecute correctamente, siguiendo lo que indican en su código. Controlan el funcionamiento del programa y la comunicación con los periféricos, coordinando así la ejecución y la interacción en el sistema.
 
 ####  1.2.4. ¿Cómo se relaciona esta simulación con lo que ocurre en un ordenador real? 
 
-Respuesta
+Pues al igual que ocurriría en un ordenador real, en esta simulación se ordenan ciertas instrucciones, se controlan ciertos procesos, y según el estado de los mismos se llevan a cabo o no las acciones necesarias para así realizar correctamente lo que se indica en las instrucciones del código. Esto mismo que ocurre en la práctica del botón y el LED, podría ocurrir en un ordenador real por ejemplo al pulsar una tecla de nuestro teclado y verla escrita en la pantalla.
 
 ## 2. Del código fuente al ejecutable¶
 
 
 #### 2.1. ¿Cómo se diferencia el código fuente del código objeto y del ejecutable? 
 
-Respuesta
+El código fuente es el programa que escribe el programador utilizando un lenguaje de programación, normalmente fácilmente comprendido por los humanos, además no puede ser ejecutado directamente porque el ordenador no lo entendería.
+
+El código objeto es una versión intermedia del código fuente. Este se obtiene tras compilar el programa, utilizando un compilador, el cual transforma el código fuente a un formato más cercano al lenguaje que la máquina esté más cerca de entender.
+
+Y el código ejecutable es la versión final del programa y es aquel que sí que puede ser comprendido y leído por el ordenador para que pueda ejecutarlo directamente. En él se encuentra el mismo contenido que en el código fuente, solo que traducido a lenguaje máquina para que así el ordenador logre comprenderlo y ejecutarlo.
+
 
 ####  2.2. ¿Por qué el ordenador no puede entender el código fuente directamente? 
 
-Respuesta
+Porque este se encuentra escrito en un lenguaje de programación, el cual es familiar para el programador y no está en un formato adecuado para que el ordenador pueda entenderlo y ejecutarlo correctamente, para esto se necesita que el código que reciba el ordenador esté en lenguaje máquina, como es el caso del código ejecutable.
+
 
 ####  2.3. ¿Por qué es importante el paso de enlazado en la creación de programas? 
 
-Respuesta
+Es importante porque es el que se encarga de reunir todo lo necesario de nuestro programa en un solo archivo ejecutable, además de incluir a su vez las bibliotecas necesarias para que el programa funcione.
 
 ####  2.4. ¿Qué ocurre si falta alguna de las etapas (código objeto o ejecutable)? 
 
-Respuesta
+Si falta el código objeto, no podremos generar el código ejecutable y, por ende, no podríamos ejecutar nuestro programa de ninguna manera. En cambio si lo que falta es el código ejecutable, tampoco se podrá ejecutar el programa ya que es necesario que el archivo que lea nuestro ordenador esté en lenguaje máquina, y el único código que cumple este requisito es el ejecutable.
 
 ## 3. Generación de código intermedio
 
@@ -250,3 +258,9 @@ Respuesta
 
 
 - https://revilofe.github.io/
+
+- https://acortar.link/sfAjah
+
+- https://acortar.link/nRaFB5
+
+
