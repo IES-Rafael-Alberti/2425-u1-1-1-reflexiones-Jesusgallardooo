@@ -104,14 +104,27 @@ está escrito en un lenguaje familiarizado  con el lenguaje máquina pero que a�
 mientras que el código ejecutable está escrito en lenguaje máquina para poder ser leído y comprendido correctamente por nuestra máquina. Cabe destacar que
 en ambos códigos el contenido y las instrucciones son las mismas.
 
+#### 3.2 ¿Por qué es útil tener una máquina virtual?
+
+Porque es una herramienta que es como un intérprete o mediador entre el código intermedio y el hardware. Encargándose de ejecutar el código intermedio traduciendo 
+el mismo a un lenguaje que pueda ser comprendido por el procesador correctamente.
+
 
 ####  3.3. ¿Qué ventajas ofrece el código intermedio? 
 
-Respuesta
+El código intermedio ofrece:
+
+- portabilidad: el mismo programa puede ejecutarse en diferentes sistemas operativos sin necesidad de volver a compilar el código fuente.
+
+- Seguridad: Pueden implementar capas de seguridad, verifica y controla el acceso al sistema operativo y al hardware, evitando programas maliciosos y eliminando riesgos.
+
+- Optimización del tiempo de ejecución: Muchas máquinas virtuales utilizan una compilación llamada Just In Time, la cual funciona  convirtiendo el código intermedio a 
+código máquina justo antes de ejecutarlo, lo cual optimiza el rendimiento del programa.
+
 
 ####  3.4. ¿Además de java, qué otros lenguajes usan máquinas virtuales? 
 
-Respuesta
+Algunos lenguajes que también usan máquinas virtuales son: C#, Kotlin, Lua…
 
 ## 4. Lenguajes de programación
 
@@ -124,7 +137,12 @@ Respuesta
 
 ####   4.1.1. ¿Qué diferencias notaron en el proceso de compilación frente a la ejecución directa? 
 
-Respuesta
+La mayor diferencia es el tiempo de ejecución. A pesar de que el proceso de compilado, código intermedio y código ejecutable pueda ser algo más tedioso, 
+es bastante más rápido que en los lenguajes de ejecución directa (lenguajes interpretados).
+
+Otra diferencia a tener en cuenta, es la facilidad a la hora de debuggear el código. En los lenguajes interpretados, este proceso es mucho más cómodo y 
+familiar ya que se puede ir haciendo en tiempo real sin necesidad de tener en cuenta tantos factores como en los compilados.
+
 
 ####   4.1.2. ¿Qué pasa si hay un error de sintaxis en cada lenguaje? ¿Cuándo se detecta el error? 
 
@@ -144,11 +162,23 @@ Una vez compilamos, se detectan los errores y la ubicación de los mismos.
 
 #### 4.2.1. ¿Qué notaron sobre la abstracción entre los lenguajes de alto nivel y bajo nivel?
 
-Respuesta
+Desde mi punto de vista, la abstracción en los lenguajes de programación de alto nivel es bastante mayor que en los de bajo nivel, ya que al ser lenguajes más cercanos al humano que a 
+la máquina, es cierto que dejan pasar por alto bastantes factores que están implícitos y que ocurren, pero que nosotros al fin y al cabo no controlamos. 
+
+Mientras que en los lenguajes de bajo nivel, al ser más cercanos al lenguaje máquina, se tienen en cuenta muchos más sucesos y necesidades que tendrán que ser definidas por quienes lo 
+programen, como por ejemplo en el caso de ensamblador con las posiciones de memoria y los registros.
+
 
 #### 4.2.2. ¿Qué ventajas y desventajas encontraron en cada uno?
 
-Respuesta
+Algunas ventajas de los lenguajes de alto nivel pueden ser que son más fáciles tanto de usar como de entender, mejorando y facilitando así la experiencia del desarrollo de software, mientras 
+que los lenguajes de bajo nivel, a pesar de ser más complejos y difíciles de dominar, son más rápidos y directos en cuanto a tiempo de ejecución e instrucciones, comentando también el proceso 
+de ir generando tanto el código fuente, como el objeto como el ejecutable. 
+
+
+En resumidas cuentas, en la mayoría de los casos, los lenguajes de alto nivel son más familiares y fáciles de comprender, mientras que los de bajo nivel, son todo lo contrario, con la ventaja 
+de que son más eficientes y directos, y por ende, más rápidos en tiempo de ejecución.
+
 
 ### 4.3 Tercera parte
 
@@ -159,32 +189,38 @@ Respuesta
 
 #### 4.3.1. ¿Cómo funciona la organización de datos en Java usando objetos y métodos?
 
-Respuesta
+En java, la organización de la programación orientada a objetos funciona con la creación de clases. Estas clases, tienen funciones y métodos, que según se necesite se definirán de la manera 
+más óptima posible, de manera que a la hora de ir creando objetos, todo será más cómodo y fácil de comprender al estar correlacionado.
+
 
 #### 4.3.2. ¿Cómo es diferente trabajar en un enfoque funcional en Python, usando solo funciones puras?      
 
-Respuesta
+En principio, el uso de funciones puras es el idóneo, ya que te garantizan la funcionalidad correcta de nuestro código. Lo único que posiblemente nuestro problema necesite de más funcionalidades 
+que dejen de ser puras para solucionar el problema que nos pida, pero su utilización es más que recomendable; facilita la realización de pruebas, son fácilmente reutilizables...
 
 ### 4.4 Reflexión final
 
 #### 4.4.1. ¿Qué lenguajes se sintieron más fáciles de usar? ¿Por qué?
 
-Bajo mi punto de vista, el lenguaje qué he sentido más fácil de usar y con el que más cómodo me he sentido hasta ahora es Python. Es un lenguaje fácil de comprender, 
-y cuyo código no presenta dificultades de comprensión una vez se adquieren los conocimientos básicos de programación y de sintaxis del lenguaje.
-
- La verdad que a diferencia de otros lenguajes como C o C++, es bastante más familiar y por ende, python es el lenguaje que más fácil me ha resultado de usar. 
+A mi parecer, los lenguajes de alto nivel son más fáciles de usar ya que está más familiarizado con un lenguaje comprensible para los humanos y porque normalmente, goza de menor complejidad a la 
+hora de escribir nuestro código, por lo que la experiencia al programar en este tipo de lenguajes se hace infinitamente más cómoda y agradable que en los lenguajes de bajo nivel sin ningún tipo de duda.
 
 #### 4.4.2. ¿En qué casos es preferible usar un lenguaje compilado frente a uno interpretado?
 
-Respuesta
+Creo que depende totalmente del objetivo que queramos conseguir. Siendo algo subjetivo y con mi poca experiencia creo que preferiría programar en lenguajes interpretados. Me parecen más dinámicos y más 
+fáciles de comprender, destacando la mayor facilidad para conocer los errores de nuestro código y donde se ubican.
+
 
 #### 4.4.3. ¿Cuándo es mejor usar un lenguaje de alto nivel en lugar de uno de bajo nivel?
 
-Respuesta
+En principio, los lenguajes de bajo nivel son mucho menos abstractos y controlan muchísimos más parámetros y datos, por lo que en los casos del desarrollo de programas que busquen lo dicho, 
+la manipulación, modificación o generación de código es más complejo y óptimo. Por tanto, creo que los programas que necesiten de más velocidad, precisión y optimización, es más conveniente 
+un lenguaje de bajo nivel. Sin embargo, si lo que se busca es un desarrollo rápido, fácil y de menor complejidad, sea una mejor opción un lenguaje de alto nivel.
 
 #### 4.4.4. ¿Cómo se siente trabajar con el paradigma orientado a objetos en comparación con el imperativo o funcional?
 
-Respuesta
+Aún no hemos trabajado con el paradigma orientado a objetos, pero si tuviese que responder esta pregunta, diría que trabajar con el paradigma orientado a objetos es más “cómodo” ya que, 
+seguramente, nos brinde mayor comodidad a la hora de desarrollarlo comparado con el código imperativo o funcional, ya que está todo mucho mejor clasificado y ordenado.
 
 ## 5. Herramientas de desarrollo
 
@@ -274,5 +310,8 @@ Respuesta
 - https://acortar.link/sfAjah
 
 - https://acortar.link/nRaFB5
+
+- https://www.peritus.es/blog/articulo/diferencias-lenguajes-programacion
+
 
 
