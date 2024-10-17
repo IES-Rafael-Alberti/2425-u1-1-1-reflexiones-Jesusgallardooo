@@ -96,11 +96,14 @@ Si falta el código objeto, no podremos generar el código ejecutable y, por end
 
 #### 3.1. ¿Cómo difiere el código intermedio del código ejecutable tradicional? 
 
-Respuesta
+El código intermedio es una version del código que se crea para facilitar la lectura de nuestro código fuente a nuestra máquina. 
+La principal diferencia entre el código intermedio (código objeto), y el código ejecutable, es el lenguaje en el que está escrito.
 
-####  3.2. ¿Por qué es útil tener una máquina virtual? 
+ El código objeto
+está escrito en un lenguaje familiarizado  con el lenguaje máquina pero que aún podría llegar a entenderse algo por personas con el coonocimiento suficiente,
+mientras que el código ejecutable está escrito en lenguaje máquina para poder ser leído y comprendido correctamente por nuestra máquina. Cabe destacar que
+en ambos códigos el contenido y las instrucciones son las mismas.
 
-Respuesta
 
 ####  3.3. ¿Qué ventajas ofrece el código intermedio? 
 
@@ -125,7 +128,13 @@ Respuesta
 
 ####   4.1.2. ¿Qué pasa si hay un error de sintaxis en cada lenguaje? ¿Cuándo se detecta el error? 
 
-Respuesta
+Esta detección de errores en nuestro código depende de si el lenguaje es compilado o interpretado, por ello, clasificaremos la respuesta según dicha condición.
+
+En el caso de los lenguajes interpretados, los errores de sintaxis serán marcados por el IDE en el que se programe en la mayoría de los casos, facilitando así la detección 
+de errores y dinamizando este proceso, el cual se dará en tiempo de ejecución de nuestro programa.
+
+Sin embargo, en los lengajes compilados, la detección de errores es totalmente diferente. No podremos conocer qué errores tenemos ni su ubicación en nuestro código hasta que compilemos. 
+Una vez compilamos, se detectan los errores y la ubicación de los mismos. 
 
 ### 4.2 Segunda parte
 
@@ -160,7 +169,10 @@ Respuesta
 
 #### 4.4.1. ¿Qué lenguajes se sintieron más fáciles de usar? ¿Por qué?
 
-Respuesta
+Bajo mi punto de vista, el lenguaje qué he sentido más fácil de usar y con el que más cómodo me he sentido hasta ahora es Python. Es un lenguaje fácil de comprender, 
+y cuyo código no presenta dificultades de comprensión una vez se adquieren los conocimientos básicos de programación y de sintaxis del lenguaje.
+
+ La verdad que a diferencia de otros lenguajes como C o C++, es bastante más familiar y por ende, python es el lenguaje que más fácil me ha resultado de usar. 
 
 #### 4.4.2. ¿En qué casos es preferible usar un lenguaje compilado frente a uno interpretado?
 
