@@ -1,3 +1,5 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Z6NE2ogx)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=16551485&assignment_repo_type=AssignmentRepo)
 # Práctica 1: Introducción al desarrollo. Reflexiones.
 
 Apoyate en los siguientes recursos para realizar la práctica:
@@ -7,72 +9,336 @@ Apoyate en los siguientes recursos para realizar la práctica:
 
 ---
 
-# Título de la Actividad
+# P 1.10: Reflexión y discusión sobre los resultados
 
 ## Identificación de la Actividad
-- **ID de la Actividad:** [ID de la actividad]
-- **Módulo:** [Nombre del módulo] (`PROG`, `IS`, `EDES`, etc.)
-- **Unidad de Trabajo:** [Número y nombre de la unidad de trabajo]
-- **Fecha de Creación:** [Fecha de creación]
-- **Fecha de Entrega:** [Fecha de entrega]
+- **ID de la Actividad:** 1.10
+- **Módulo:** EDES
+- **Unidad de Trabajo:** U1: Introducción al desarrollo de software 
+- **Fecha de Creación:** 15/10/2024
+- **Fecha de Entrega:** 20/10/2024
 - **Alumno(s):** 
-  - **Nombre y Apellidos:** [Nombre y Apellidos del alumno o integrantes del grupo]
-  - **Correo electrónico:** [Correo electrónico g.educaand.es]
-  - **Iniciales del Alumno/Grupo:** [Iniciales del alumno o del grupo]
+  - **Nombre y Apellidos:** Jesús  Gallardo Domínguez
+  - **Correo electrónico:** jgaldom0701@g.educaand.es
+  - **Iniciales del Alumno/Grupo:** JGD
 
 ## Descripción de la Actividad
-[Descripción detallada de la actividad, objetivos, y contexto necesario para comprenderla. Explicar en qué consiste la actividad y qué se espera que el alumno desarrolle o implemente.]
+Respuesta a una serie de preguntas, concretamente 40 preguntas, las cuales buscan reforzar y conseguir que adquiramos los conocimientos vistos en clases de la unidad 1: Introducción al desarrollo de software. Tocando detalladamente todos y cada uno de los puntos vistos en la unidad.  
 
-## Instrucciones de Compilación y Ejecución
-1. **Requisitos Previos:**
-   - [Lenguaje de programación y versión]
-   - [Entorno de desarrollo o dependencias necesarias]
+# Preguntas
 
-2. **Pasos para Compilar el Código:**
-   ```bash
-   [Comando para compilar el código]
-   ```
+## 1. Relación de software y hardware
 
-3. **Pasos para Ejecutar el Código:**
-   ```bash
-   [Comando para ejecutar la aplicación]
-   ```
 
-4. **Ejecución de Pruebas:**
-   ```bash
-   [Comandos para ejecutar pruebas, si las hubiera]
-   ```
+### 1.1 Primera parte
 
-## Desarrollo de la Actividad
-### Descripción del Desarrollo
-[Explicación de cómo se ha abordado el desarrollo de la actividad, incluyendo las decisiones de diseño, estructura del código y enfoque de resolución de problemas. Se recomienda adjuntar diagramas o capturas de pantalla si es necesario.]
 
-### Código Fuente
-[Aquí se incluirá un enlace directo a los archivos de código fuente en el repositorio, por ejemplo, si se está usando GitHub: `src/main.java` o algún enlace directo.]
+#### 1.1.1. ¿Cómo se ejecuta el código en el procesador? 
 
-### Ejemplos de Ejecución
-- **Entrada 1:** Descripción de la entrada y valor de prueba.
-- **Salida Esperada 1:** Explicación de la salida esperada y el resultado de la prueba.
+Primero, el procesador, en función del lenguaje en el que esté programado el código,  compilará o interpretará dicho código, para así convertirlo a 
+lenguaje máquina. Tras traducirlo a lenguaje máquina, esta información se carga en la memoria RAM, desde la cual el procesador irá recibiendo instrucciones 
+y ejecutándolas. Una vez estas instrucciones son ejecutadas, los resultados en caso de que los hubiese, los guardaríamos o veríamos en la salida.
 
-### Resultados de Pruebas
-[Aquí se detallará cómo se ha verificado la funcionalidad del código, incluyendo resultados de pruebas automatizadas o manuales, en caso de que las haya.]
+#### 1.1.2. ¿Qué hace la memoria RAM con la información del botón o el LED? 
 
-## Documentación Adicional
-- **Manual de Usuario:** [Enlace a la documentación del usuario, si existe]
-- **Autorización de Permisos:** Verificar que el profesor tenga permisos de lectura en el repositorio para revisar el código.
+La RAM comprueba el estado tanto del botón como del LED, para saber si el botón se encuentra activo y si, por ende, el LED está encendido. almacena dicha información,y en caso de que dicha información cambiase, ordenará la instrucción de cambiar el estado del botón y del LED al procesador para así obtener el resultado que nos pedía nuestro programa. 
+
+#### 1.1.3. ¿Cómo se comunican los periféricos (botón y LED) con el procesador? 
+
+En nuestro caso, era una simulación con una placa arduino, por lo que existía una conexión física asignada a los pines correspondientes. Para comunicarse con el procesador, el cual comprueba el estado del botón y controla el estado del LED encendiéndolo o apagándolo según indique el botón.
+
+### 1.2 Segunda parte
+
+
+
+#### 1.2.1. ¿Cómo interactúan el procesador, la memoria y los periféricos en la ejecución del programa? 
+
+La interacción consiste en la carga del programa/información en la memoria RAM, el procesador lee las instrucciones  que han sido recibidas de la RAM y las ejecuta realizando las funciones que estas indiquen, y cuando dicho programa ordene comunicarse con cualquier periférico, el procesador se encargará de comunicarse con él por los puertos de E/S, enviando o recibiendo datos según se necesite.
+
+####  1.2.2. ¿Qué pasa con los datos en la memoria cuando el programa se ejecuta? 
+
+Cuando ejecutamos un programa, primeramente se carga en la RAM, donde además se almacenarán los datos necesarios para ejecutarse. Una vez se cierra el programa, la memoria se vacía ya que así funciona la memoria RAM. 
+
+####  1.2.3. ¿Qué roles juegan las instrucciones del software en esta interacción? 
+
+Las instrucciones se encargan de que todo se ejecute correctamente, siguiendo lo que indican en su código. Controlan el funcionamiento del programa y la comunicación con los periféricos, coordinando así la ejecución y la interacción en el sistema.
+
+####  1.2.4. ¿Cómo se relaciona esta simulación con lo que ocurre en un ordenador real? 
+
+Pues al igual que ocurriría en un ordenador real, en esta simulación se ordenan ciertas instrucciones, se controlan ciertos procesos, y según el estado de los mismos se llevan a cabo o no las acciones necesarias para así realizar correctamente lo que se indica en las instrucciones del código. Esto mismo que ocurre en la práctica del botón y el LED, podría ocurrir en un ordenador real por ejemplo al pulsar una tecla de nuestro teclado y verla escrita en la pantalla.
+
+## 2. Del código fuente al ejecutable¶
+
+
+#### 2.1. ¿Cómo se diferencia el código fuente del código objeto y del ejecutable? 
+
+El código fuente es el programa que escribe el programador utilizando un lenguaje de programación, normalmente fácilmente comprendido por los humanos, además no puede ser ejecutado directamente porque el ordenador no lo entendería.
+
+El código objeto es una versión intermedia del código fuente. Este se obtiene tras compilar el programa, utilizando un compilador, el cual transforma el código fuente a un formato más cercano al lenguaje que la máquina esté más cerca de entender.
+
+Y el código ejecutable es la versión final del programa y es aquel que sí que puede ser comprendido y leído por el ordenador para que pueda ejecutarlo directamente. En él se encuentra el mismo contenido que en el código fuente, solo que traducido a lenguaje máquina para que así el ordenador logre comprenderlo y ejecutarlo.
+
+
+####  2.2. ¿Por qué el ordenador no puede entender el código fuente directamente? 
+
+Porque este se encuentra escrito en un lenguaje de programación, el cual es familiar para el programador y no está en un formato adecuado para que el ordenador pueda entenderlo y ejecutarlo correctamente, para esto se necesita que el código que reciba el ordenador esté en lenguaje máquina, como es el caso del código ejecutable.
+
+
+####  2.3. ¿Por qué es importante el paso de enlazado en la creación de programas? 
+
+Es importante porque es el que se encarga de reunir todo lo necesario de nuestro programa en un solo archivo ejecutable, además de incluir a su vez las bibliotecas necesarias para que el programa funcione.
+
+####  2.4. ¿Qué ocurre si falta alguna de las etapas (código objeto o ejecutable)? 
+
+Si falta el código objeto, no podremos generar el código ejecutable y, por ende, no podríamos ejecutar nuestro programa de ninguna manera. En cambio si lo que falta es el código ejecutable, tampoco se podrá ejecutar el programa ya que es necesario que el archivo que lea nuestro ordenador esté en lenguaje máquina, y el único código que cumple este requisito es el ejecutable.
+
+## 3. Generación de código intermedio
+
+#### 3.1. ¿Cómo difiere el código intermedio del código ejecutable tradicional? 
+
+El código intermedio es una version del código que se crea para facilitar la lectura de nuestro código fuente a nuestra máquina. 
+La principal diferencia entre el código intermedio (código objeto), y el código ejecutable, es el lenguaje en el que está escrito.
+
+ El código objeto
+está escrito en un lenguaje familiarizado  con el lenguaje máquina pero que aún podría llegar a entenderse algo por personas con el coonocimiento suficiente,
+mientras que el código ejecutable está escrito en lenguaje máquina para poder ser leído y comprendido correctamente por nuestra máquina. Cabe destacar que
+en ambos códigos el contenido y las instrucciones son las mismas.
+
+#### 3.2 ¿Por qué es útil tener una máquina virtual?
+
+Porque es una herramienta que es como un intérprete o mediador entre el código intermedio y el hardware. Encargándose de ejecutar el código intermedio traduciendo 
+el mismo a un lenguaje que pueda ser comprendido por el procesador correctamente.
+
+
+####  3.3. ¿Qué ventajas ofrece el código intermedio? 
+
+El código intermedio ofrece:
+
+- portabilidad: el mismo programa puede ejecutarse en diferentes sistemas operativos sin necesidad de volver a compilar el código fuente.
+
+- Seguridad: Pueden implementar capas de seguridad, verifica y controla el acceso al sistema operativo y al hardware, evitando programas maliciosos y eliminando riesgos.
+
+- Optimización del tiempo de ejecución: Muchas máquinas virtuales utilizan una compilación llamada Just In Time, la cual funciona  convirtiendo el código intermedio a 
+código máquina justo antes de ejecutarlo, lo cual optimiza el rendimiento del programa.
+
+
+####  3.4. ¿Además de java, qué otros lenguajes usan máquinas virtuales? 
+
+Algunos lenguajes que también usan máquinas virtuales son: C#, Kotlin, Lua…
+
+## 4. Lenguajes de programación
+
+
+### 4.1 Primera parte
+
+
+####  Compara el proceso de ejecución entre el lenguaje compilado y el interpretado. 
+
+
+####   4.1.1. ¿Qué diferencias notaron en el proceso de compilación frente a la ejecución directa? 
+
+La mayor diferencia es el tiempo de ejecución. A pesar de que el proceso de compilado, código intermedio y código ejecutable pueda ser algo más tedioso, 
+es bastante más rápido que en los lenguajes de ejecución directa (lenguajes interpretados).
+
+Otra diferencia a tener en cuenta, es la facilidad a la hora de debuggear el código. En los lenguajes interpretados, este proceso es mucho más cómodo y 
+familiar ya que se puede ir haciendo en tiempo real sin necesidad de tener en cuenta tantos factores como en los compilados.
+
+
+####   4.1.2. ¿Qué pasa si hay un error de sintaxis en cada lenguaje? ¿Cuándo se detecta el error? 
+
+Esta detección de errores en nuestro código depende de si el lenguaje es compilado o interpretado, por ello, clasificaremos la respuesta según dicha condición.
+
+En el caso de los lenguajes interpretados, los errores de sintaxis serán marcados por el IDE en el que se programe en la mayoría de los casos, facilitando así la detección 
+de errores y dinamizando este proceso, el cual se dará en tiempo de ejecución de nuestro programa.
+
+Sin embargo, en los lenguajes compilados, la detección de errores es totalmente diferente. No podremos conocer qué errores tenemos ni su ubicación en nuestro código hasta que compilemos. 
+Una vez compilamos, se detectan los errores y la ubicación de los mismos. 
+
+### 4.2 Segunda parte
+
+
+#### Compara un lenguaje de alto nivel con uno de bajo nivel.
+
+
+#### 4.2.1. ¿Qué notaron sobre la abstracción entre los lenguajes de alto nivel y bajo nivel?
+
+Desde mi punto de vista, la abstracción en los lenguajes de programación de alto nivel es bastante mayor que en los de bajo nivel, ya que al ser lenguajes más cercanos al humano que a 
+la máquina, es cierto que dejan pasar por alto bastantes factores que están implícitos y que ocurren, pero que nosotros al fin y al cabo no controlamos. 
+
+Mientras que en los lenguajes de bajo nivel, al ser más cercanos al lenguaje máquina, se tienen en cuenta muchos más sucesos y necesidades que tendrán que ser definidas por quienes lo 
+programen, como por ejemplo en el caso de ensamblador con las posiciones de memoria y los registros.
+
+
+#### 4.2.2. ¿Qué ventajas y desventajas encontraron en cada uno?
+
+Algunas ventajas de los lenguajes de alto nivel pueden ser que son más fáciles tanto de usar como de entender, mejorando y facilitando así la experiencia del desarrollo de software, mientras 
+que los lenguajes de bajo nivel, a pesar de ser más complejos y difíciles de dominar, son más rápidos y directos en cuanto a tiempo de ejecución e instrucciones, comentando también el proceso 
+de ir generando tanto el código fuente, como el objeto como el ejecutable. 
+
+
+En resumidas cuentas, en la mayoría de los casos, los lenguajes de alto nivel son más familiares y fáciles de comprender, mientras que los de bajo nivel, son todo lo contrario, con la ventaja 
+de que son más eficientes y directos, y por ende, más rápidos en tiempo de ejecución.
+
+
+### 4.3 Tercera parte
+
+
+
+#### Compara un lenguaje orientado a objetos vs funcional.
+
+
+#### 4.3.1. ¿Cómo funciona la organización de datos en Java usando objetos y métodos?
+
+En java, la organización de la programación orientada a objetos funciona con la creación de clases. Estas clases, tienen funciones y métodos, que según se necesite se definirán de la manera 
+más óptima posible, de manera que a la hora de ir creando objetos, todo será más cómodo y fácil de comprender al estar correlacionado.
+
+
+#### 4.3.2. ¿Cómo es diferente trabajar en un enfoque funcional en Python, usando solo funciones puras?      
+
+En principio, el uso de funciones puras es el idóneo, ya que te garantizan la funcionalidad correcta de nuestro código. Lo único que posiblemente nuestro problema necesite de más funcionalidades 
+que dejen de ser puras para solucionar el problema que nos pida, pero su utilización es más que recomendable; facilita la realización de pruebas, son fácilmente reutilizables...
+
+### 4.4 Reflexión final
+
+#### 4.4.1. ¿Qué lenguajes se sintieron más fáciles de usar? ¿Por qué?
+
+A mi parecer, los lenguajes de alto nivel son más fáciles de usar ya que está más familiarizado con un lenguaje comprensible para los humanos y porque normalmente, goza de menor complejidad a la 
+hora de escribir nuestro código, por lo que la experiencia al programar en este tipo de lenguajes se hace infinitamente más cómoda y agradable que en los lenguajes de bajo nivel sin ningún tipo de duda.
+
+#### 4.4.2. ¿En qué casos es preferible usar un lenguaje compilado frente a uno interpretado?
+
+Creo que depende totalmente del objetivo que queramos conseguir. Siendo algo subjetivo y con mi poca experiencia creo que preferiría programar en lenguajes interpretados. Me parecen más dinámicos y más 
+fáciles de comprender, destacando la mayor facilidad para conocer los errores de nuestro código y donde se ubican.
+
+
+#### 4.4.3. ¿Cuándo es mejor usar un lenguaje de alto nivel en lugar de uno de bajo nivel?
+
+En principio, los lenguajes de bajo nivel son mucho menos abstractos y controlan muchísimos más parámetros y datos, por lo que en los casos del desarrollo de programas que busquen lo dicho, 
+la manipulación, modificación o generación de código es más complejo y óptimo. Por tanto, creo que los programas que necesiten de más velocidad, precisión y optimización, es más conveniente 
+un lenguaje de bajo nivel. Sin embargo, si lo que se busca es un desarrollo rápido, fácil y de menor complejidad, sea una mejor opción un lenguaje de alto nivel.
+
+#### 4.4.4. ¿Cómo se siente trabajar con el paradigma orientado a objetos en comparación con el imperativo o funcional?
+
+Aún no hemos trabajado con el paradigma orientado a objetos, pero si tuviese que responder esta pregunta, diría que trabajar con el paradigma orientado a objetos es más “cómodo” ya que, 
+seguramente, nos brinde mayor comodidad a la hora de desarrollarlo comparado con el código imperativo o funcional, ya que está todo mucho mejor clasificado y ordenado.
+
+## 5. Herramientas de desarrollo
+
+
+### 5.1 Primera parte
+
+
+#### Respecto a las proceso de creación de software identifica un conjunto de herramientas a usar.
+
+
+#### 5.1.1. ¿Qué hace cada una de las herramientas?
+
+#### 5.1.2. ¿Qué tipo de tareas facilita?
+
+
+#### 5.1.3. ¿Qué características ofrece que la hacen única o diferente de otras herramientas similares?
+
+Las 3 preguntas de arriba estan respondidas aquí:
+
+- Editores de texto: Esta herramienta nos permite escribir y modificar código, nos ayuda con la detección de errores en sintaxis, nos ofrece autocompletado, nos permite instalarnos plugins, 
+también nos facilita la depuración… En su conjunto, nos ameniza el desarrollo y lo hace una actividad más fácil y agradable de realizar.
+
+- Compiladores: Esta herramienta nos traduce nuestro código fuente a código máquina para facilitar y permitir su lectura y ejecución a nuestro ordenador. Se usa únicamente con lenguajes compilados.
+
+- Intérpretes: Esta herramienta va ejecutando nuestro código línea a línea, sin necesidad de compilarlo previamente, siendo más cómodo y fácil el desarrollo y la depuración..
+
+ 
+- Herramientas de documentación: Esta  herramienta nos permite mantener la claridad del código y facilitar su comprensión. En algunos casos hasta  analizando el código y generando la documentación 
+del mismo automáticamente basándose en los comentarios y anotaciones que hayamos incluido en el mismo.
+
+- Depuradores: Son herramientas que nos facilita la detección de errores y la ubicación de los mismos en nuestro código para solucionarlo lo más rápido posible.
+
+- Sistemas de gestión de controles: Esta herramienta permite a los desarrolladores llevar un seguimiento detallado del desarrollo de sus proyectos, permitiendo además crear diferentes ramas de trabajo 
+y colaborar entre ellos sin sobrescribir en las modificaciones que hagan los  demás programadores.
+
+- Frameworks: Esta herramienta es un conjunto de herramientas y plantillas que facilitan el desarrollo de software, cuyo uso ahorra tiempo y esfuerzo a los programadores a la hora de desarrollar el proyecto.
+
+
+#### 5.1.4. Elige una ¿Cómo es la experiencia de usuario al usarla? ¿Es fácil o compleja?
+
+- Sistemas de gestión de versiones: Al principio, si nunca se ha utilizado antes, la experiencia de uso puede ser algo compleja ya que no resulta fácil del todo acostumbrarse, pero una vez se entiende a la perfección y ya la hemos usado varias veces su uso es más que imprescindible en el desarrollo de software.
+
+#### 5.1.5. Elige una ¿En qué situaciones sería ideal utilizar esta herramienta?
+
+- Frameworks: Esta herramienta nos proporciona un conjunto de herramientas y plantillas, como por ejemplo en nuestro caso “pytest”, que nos facilita la realización de pruebas unitarias. Quizá el uso ideal de esta herramienta sea cuando se necesite realizar un proyecto lo más rápido posible y no se pueda desperdiciar ni un segundo. De manera que usamos el framework que mejor nos venga para agilizar el proceso de desarrollo de nuestro proyecto. 
+
+
+#### 5.1.6. Elige una ¿Qué limitaciones encontraste en la herramienta? 
+
+- Compiladores: En esta herramienta, quizá algunas de las limitaciones que he encontrado buscando información, han sido la posibilidad de encontrar y ubicar errores, la dependencia del lenguaje de programación que se utilice (solo puede utilizarse con ciertos lenguajes) o el tiempo de compilación
+
+
+### 5.2 Segunda parte
+
+
+#### Céntrate en una herramienta dentro de la misma categoría y compárala con otras:
+
+
+#### 5.2.1. ¿Qué herramienta se considera más útil y por qué?
+
+Para mí, de las más útiles podría ser el IDE, ya que al fin y al cabo es lo que hace más visual el desarrollo y lo que más facilita el mismo, aunque otras herramientas como los depuradores también son muy importantes y casi imprescindibles.
+
+
+#### 5.2.2. ¿Qué ventajas tiene una sobre la otra?
+
+El editor de texto/IDE nos facilita el desarrollo, y el depurador nos facilita la detección de errores, son acciones diferentes que se complementan mejor que bien para facilitar el desarrollo de software.
+
+
+#### 5.2.3. ¿Cuál herramienta resultó ser la más intuitiva y por qué?
+
+Desde mi punto de vista, la más intuitiva ha sido el editor de texto/IDE porque es con la que más familiarizados estamos y la que dispone de más entorno gráfico, en el sentido de que todo lo que puedes hacer, es fácil de encontrar y de entender.
+
+
+#### 5.2.4. ¿En qué casos se recomendaría usar un compilador en lugar de un intérprete?
+
+En los casos en los que el lenguaje de programación en el que se haya desarrollado nuestro proyecto de software en un lenguaje de programación compilado.
+
+
+#### 5.2.5. ¿Qué tipo de proyectos se beneficiarían más de un framework como Django?
+
+Los proyectos de aplicaciones web complejas que necesiten un fácil acceso a bases de datos, con necesidad de autenticación y manejo de rutas, reduciendo así el esfuerzo de codificación y ahorrando tiempo a los desarrolladores.
+
+
+### 5.3 Reflexión final
+
+
+#### Con base en la experiencia de evaluación de las herramientas:
+
+
+#### 5.3.1. ¿Cómo crees que impacta la elección de la herramienta en la calidad del software?
+
+Impacta considerablemente, ya que haciendo una buena elección de herramientas, esta puede verse mucho más fácil, cómoda y rápida, haciéndola mucho más amena y disfrutable. Además de que la calidad del software sería muchísimo más alta.
+
+
+#### 5.3.2. ¿Qué características buscarías en una herramienta para facilitar tu flujo de trabajo?
+
+Eficiencia, ahorro de tiempo, velocidad, accesibilidad y facilidad de uso.
+
+
+#### 5.3.3. ¿Cómo cambió tu percepción de estas herramientas después de haberlas probado y evaluado? 
+
+A pesar de ya conocer la mayoría de ellas desde el curso anterior, cambiar no ha cambiado gran cosa. Aunque sí que es cierto que al estar este año más centrado y con más ganas, estoy poniendo a prueba y viviendo en primera persona todas las ventajas que estas herramientas proporcionan a los desarrolladores.
+
 
 ## Conclusiones
-[Resumen de las conclusiones alcanzadas al desarrollar la actividad, las lecciones aprendidas, y posibles mejoras que se puedan implementar en futuras entregas.]
 
-## Referencias y Fuentes
-[Aquí se listarán las fuentes consultadas para el desarrollo de la actividad, tales como documentación oficial, artículos, o cualquier recurso externo relevante.]
+Ha sido una actividad un poco larga de realizar, ya que pide bastante tiempo de lectura y de investigación. Aunque es cierto que es bastante necesaria para así empezar con buen pie
+y acostumbrarnos a hablar de ciertos temas y a cierto vocabulario.
 
-### Notas Adicionales:
-1. **Nombres de Archivos y Repositorios:**
-   - Asegúrate de que el nombre del archivo o repositorio siga la estructura definida: `XXX-idActividad-Iniciales`.
-2. **Permisos:**
-   - Verifica que el profesor tenga los permisos necesarios para acceder al repositorio o documento.
-3. **Formato:**
-   - Si se entrega en formato PDF o Google Docs, asegúrate de cumplir con el mínimo y máximo de folios establecidos.
-4. **Compilación y Ejecución:**
-   - Detalla claramente cómo compilar y ejecutar el código, incluyendo las instrucciones en el archivo `README.md`.
+## Bibliografía
+
+- https://revilofe.github.io/
+
+- https://acortar.link/sfAjah
+
+- https://acortar.link/nRaFB5
+
+- https://www.peritus.es/blog/articulo/diferencias-lenguajes-programacion
+
+
+
