@@ -151,7 +151,7 @@ Esta detección de errores en nuestro código depende de si el lenguaje es compi
 En el caso de los lenguajes interpretados, los errores de sintaxis serán marcados por el IDE en el que se programe en la mayoría de los casos, facilitando así la detección 
 de errores y dinamizando este proceso, el cual se dará en tiempo de ejecución de nuestro programa.
 
-Sin embargo, en los lengajes compilados, la detección de errores es totalmente diferente. No podremos conocer qué errores tenemos ni su ubicación en nuestro código hasta que compilemos. 
+Sin embargo, en los lenguajes compilados, la detección de errores es totalmente diferente. No podremos conocer qué errores tenemos ni su ubicación en nuestro código hasta que compilemos. 
 Una vez compilamos, se detectan los errores y la ubicación de los mismos. 
 
 ### 4.2 Segunda parte
@@ -233,27 +233,45 @@ seguramente, nos brinde mayor comodidad a la hora de desarrollarlo comparado con
 
 #### 5.1.1. ¿Qué hace cada una de las herramientas?
 
-Respuesta
-
 #### 5.1.2. ¿Qué tipo de tareas facilita?
 
-Respuesta
 
 #### 5.1.3. ¿Qué características ofrece que la hacen única o diferente de otras herramientas similares?
 
-Respuesta
+Las 3 preguntas de arriba estan respondidas aquí:
+
+- Editores de texto: Esta herramienta nos permite escribir y modificar código, nos ayuda con la detección de errores en sintaxis, nos ofrece autocompletado, nos permite instalarnos plugins, 
+también nos facilita la depuración… En su conjunto, nos ameniza el desarrollo y lo hace una actividad más fácil y agradable de realizar.
+
+- Compiladores: Esta herramienta nos traduce nuestro código fuente a código máquina para facilitar y permitir su lectura y ejecución a nuestro ordenador. Se usa únicamente con lenguajes compilados.
+
+- Intérpretes: Esta herramienta va ejecutando nuestro código línea a línea, sin necesidad de compilarlo previamente, siendo más cómodo y fácil el desarrollo y la depuración..
+
+ 
+- Herramientas de documentación: Esta  herramienta nos permite mantener la claridad del código y facilitar su comprensión. En algunos casos hasta  analizando el código y generando la documentación 
+del mismo automáticamente basándose en los comentarios y anotaciones que hayamos incluido en el mismo.
+
+- Depuradores: Son herramientas que nos facilita la detección de errores y la ubicación de los mismos en nuestro código para solucionarlo lo más rápido posible.
+
+- Sistemas de gestión de controles: Esta herramienta permite a los desarrolladores llevar un seguimiento detallado del desarrollo de sus proyectos, permitiendo además crear diferentes ramas de trabajo 
+y colaborar entre ellos sin sobrescribir en las modificaciones que hagan los  demás programadores.
+
+- Frameworks: Esta herramienta es un conjunto de herramientas y plantillas que facilitan el desarrollo de software, cuyo uso ahorra tiempo y esfuerzo a los programadores a la hora de desarrollar el proyecto.
+
 
 #### 5.1.4. Elige una ¿Cómo es la experiencia de usuario al usarla? ¿Es fácil o compleja?
 
-Respuesta
+- Sistemas de gestión de versiones: Al principio, si nunca se ha utilizado antes, la experiencia de uso puede ser algo compleja ya que no resulta fácil del todo acostumbrarse, pero una vez se entiende a la perfección y ya la hemos usado varias veces su uso es más que imprescindible en el desarrollo de software.
 
 #### 5.1.5. Elige una ¿En qué situaciones sería ideal utilizar esta herramienta?
 
-Respuesta
+- Frameworks: Esta herramienta nos proporciona un conjunto de herramientas y plantillas, como por ejemplo en nuestro caso “pytest”, que nos facilita la realización de pruebas unitarias. Quizá el uso ideal de esta herramienta sea cuando se necesite realizar un proyecto lo más rápido posible y no se pueda desperdiciar ni un segundo. De manera que usamos el framework que mejor nos venga para agilizar el proceso de desarrollo de nuestro proyecto. 
+
 
 #### 5.1.6. Elige una ¿Qué limitaciones encontraste en la herramienta? 
 
-Respuesta
+- Compiladores: En esta herramienta, quizá algunas de las limitaciones que he encontrado buscando información, han sido la posibilidad de encontrar y ubicar errores, la dependencia del lenguaje de programación que se utilice (solo puede utilizarse con ciertos lenguajes) o el tiempo de compilación
+
 
 ### 5.2 Segunda parte
 
@@ -263,23 +281,28 @@ Respuesta
 
 #### 5.2.1. ¿Qué herramienta se considera más útil y por qué?
 
-Respuesta
+Para mí, de las más útiles podría ser el IDE, ya que al fin y al cabo es lo que hace más visual el desarrollo y lo que más facilita el mismo, aunque otras herramientas como los depuradores también son muy importantes y casi imprescindibles.
 
-#### 5.2.2. ¿Qué ventajas tiene una sobre la otra?ç
 
-Respuesta
+#### 5.2.2. ¿Qué ventajas tiene una sobre la otra?
+
+El editor de texto/IDE nos facilita el desarrollo, y el depurador nos facilita la detección de errores, son acciones diferentes que se complementan mejor que bien para facilitar el desarrollo de software.
+
 
 #### 5.2.3. ¿Cuál herramienta resultó ser la más intuitiva y por qué?
 
-Respuesta
+Desde mi punto de vista, la más intuitiva ha sido el editor de texto/IDE porque es con la que más familiarizados estamos y la que dispone de más entorno gráfico, en el sentido de que todo lo que puedes hacer, es fácil de encontrar y de entender.
+
 
 #### 5.2.4. ¿En qué casos se recomendaría usar un compilador en lugar de un intérprete?
 
-Respuesta
+En los casos en los que el lenguaje de programación en el que se haya desarrollado nuestro proyecto de software en un lenguaje de programación compilado.
+
 
 #### 5.2.5. ¿Qué tipo de proyectos se beneficiarían más de un framework como Django?
 
-Respuesta
+Los proyectos de aplicaciones web complejas que necesiten un fácil acceso a bases de datos, con necesidad de autenticación y manejo de rutas, reduciendo así el esfuerzo de codificación y ahorrando tiempo a los desarrolladores.
+
 
 ### 5.3 Reflexión final
 
@@ -289,21 +312,25 @@ Respuesta
 
 #### 5.3.1. ¿Cómo crees que impacta la elección de la herramienta en la calidad del software?
 
-Respuesta
+Impacta considerablemente, ya que haciendo una buena elección de herramientas, esta puede verse mucho más fácil, cómoda y rápida, haciéndola mucho más amena y disfrutable. Además de que la calidad del software sería muchísimo más alta.
+
 
 #### 5.3.2. ¿Qué características buscarías en una herramienta para facilitar tu flujo de trabajo?
 
-Respuesta
+Eficiencia, ahorro de tiempo, velocidad, accesibilidad y facilidad de uso.
+
 
 #### 5.3.3. ¿Cómo cambió tu percepción de estas herramientas después de haberlas probado y evaluado? 
 
-Respuesta
+A pesar de ya conocer la mayoría de ellas desde el curso anterior, cambiar no ha cambiado gran cosa. Aunque sí que es cierto que al estar este año más centrado y con más ganas, estoy poniendo a prueba y viviendo en primera persona todas las ventajas que estas herramientas proporcionan a los desarrolladores.
+
 
 ## Conclusiones
-[Resumen de las conclusiones alcanzadas al desarrollar la actividad, las lecciones aprendidas, y posibles mejoras que se puedan implementar en futuras entregas.]
+
+Ha sido una actividad un poco larga de realizar, ya que pide bastante tiempo de lectura y de investigación. Aunque es cierto que es bastante necesaria para así empezar con buen pie
+y acostumbrarnos a hablar de ciertos temas y a cierto vocabulario.
 
 ## Bibliografía
-
 
 - https://revilofe.github.io/
 
